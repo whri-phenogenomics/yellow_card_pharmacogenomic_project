@@ -1,11 +1,6 @@
-Contents:
--mhra: folder containing the zip files for each drug on the WHRA website
--combined_df_100_percent_compression.fst: ADR master table
--process_files_190524: R script that takes input all zip files and returns the ADR master table
+**MHRA Yellow Card data pull & wrangle**
 
-To read the master table as a variable in R studio:
-(given that the fst file is in your current working directoty in R studio)
+This repo hosts the R scripts to:
+1. Retreive all interactive Drug Analysis Profiles (iDAPs) on the MHRA (Medicines & Healthcare products Regulatory Agency) Yellow Card reporting site
+2. Wrangle the data into one master file
 
-install.packages('fst')
-library(fst)
-ADR_master <- read.fst('./combined_df_100_percent_compression.fst')
