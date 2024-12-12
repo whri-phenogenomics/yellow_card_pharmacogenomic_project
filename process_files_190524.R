@@ -114,7 +114,6 @@ combined_df <- collapse::rowbind(joined_data_list_coerced, fill=TRUE)
 # Save master ADR file
 write.fst(combined_df, './combined_df.fst')
 write.fst(combined_df, './combined_df_100_percent_compression.fst', compress = 100)
-# NEED TO REORDER COLS
 
 combined_df_load_test <- read.fst('./combined_df_100_percent_compression.fst')
 
